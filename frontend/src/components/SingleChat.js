@@ -51,7 +51,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
       setLoading(true);
 
       const { data } = await axios.get(
-        `http://localhost:8000/api/message/${selectedChat._id}`,
+        `https://socket-back-dvmm.onrender.com/api/message/${selectedChat._id}`,
         config
       );
       setMessages(data);
