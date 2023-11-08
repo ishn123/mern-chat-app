@@ -78,7 +78,7 @@ function SideDrawer() {
         },
       };
 
-      const { data } = await axios.get(`http://localhost:8000/api/user?search=${search}`, config);
+      const { data } = await axios.get(`https://socket-back-dvmm.onrender.com/api/user?search=${search}`, config);
 
       setLoading(false);
       console.log(data);
@@ -106,7 +106,7 @@ function SideDrawer() {
           Authorization: `Bearer ${user.token}`,
         },
       };
-      const { data } = await axios.post(`http://localhost:8000/api/chat`, { userId }, config);
+      const { data } = await axios.post(`https://socket-back-dvmm.onrender.com/api/chat`, { userId }, config);
 
       if (!chats.find((c) => c._id === data._id)) setChats([data, ...chats]);
       setSelectedChat(data);

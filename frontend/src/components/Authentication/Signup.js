@@ -51,7 +51,7 @@ const Signup = () => {
         },
       };
       const { data } = await axios.post(
-        "http://localhost:8000/api/user",
+        "https://socket-back-dvmm.onrender.com/api/user",
         {
           name,
           email,
