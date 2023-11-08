@@ -53,6 +53,11 @@ function Homepage() {
             </TabPanel>
           </TabPanels>
         </Tabs>
+         <Box display='flex' justifyContent="center">
+          <Text>
+            Made with ❤️ by Ishan
+          </Text>
+        </Box>
       </Box>
     </Container>
   );
